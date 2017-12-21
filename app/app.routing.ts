@@ -5,10 +5,13 @@ import { Routes } from "@angular/router";
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 
+import { AlarmComponent } from "./alarm/alarm.component";
+
 const routes: Routes = [
-    { path: "", redirectTo: "/items", pathMatch: "full" },
+    { path: "", redirectTo: "/alarms", pathMatch: "full" },
     { path: "items", component: ItemsComponent },
     { path: "item/:id", component: ItemDetailComponent },
+    { path: "alarms", component: AlarmComponent }
 ];
 
 @NgModule({
